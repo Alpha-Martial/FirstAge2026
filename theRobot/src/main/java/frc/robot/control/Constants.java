@@ -97,9 +97,17 @@ public final class Constants {
     // CAN IDs
     // TODO define CAN IDs here for all non drive train components
 
-    // Shooter and azimuth
+    // Shooter
     // TODO: Use selected CAN ids
     public static final int LeadShooterMotorCanID = 15;
     public static final int FollowShooterMotorCanID = 16;
+
+    // azimuth
     public static final int AzimuthMotorCanID = 17;
+    public static final double shooterStartingAngleOffsetDegrees = 20.0;
+    public static final double shooterAngleToleranceDegrees = 0.5;
+
+    // TODO: Set these to real values
+    public static final double shooterAngleMaxDegrees = 0;
+    public static final double shooterAngleMinDegrees = 180;
 }
