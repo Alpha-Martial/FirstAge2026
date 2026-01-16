@@ -38,7 +38,7 @@ public final class Constants {
     public static final PathConstraints autoAlignPathConstraints = new PathConstraints(3.0, 2.0, 540, 720);
     // Diagnostic Constants
     public static final boolean putDiagnosticPaths = true;
-    
+
     // *****************************************************************
     // standard stuff constants - motors rotation, etc.
     public static final double DegreesPerRevolution = 360.0;
@@ -96,7 +96,6 @@ public final class Constants {
     // ********************************************************************
     // CAN IDs
     // TODO define CAN IDs here for all non drive train components
-
 
     // Shooter and azimuth
     // TODO: Use selected CAN ids

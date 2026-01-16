@@ -16,7 +16,7 @@ public class DefaultAutoAimCommand extends Command {
 
     @Override
     public void initialize() {
-        
+
     }
 
     @Override
