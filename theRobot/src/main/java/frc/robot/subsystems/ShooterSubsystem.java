@@ -20,7 +20,6 @@ public class ShooterSubsystem extends SubsystemBase {
     private final SparkClosedLoopController PIDController;
 
     // max rpm 6784.0;
-
     public ShooterSubsystem(int LeadCanID, int FollowCanID) {
         this.LeadMotor = new SparkFlex(LeadCanID, MotorType.kBrushless);
         this.FollowMotor = new SparkFlex(FollowCanID, MotorType.kBrushless);
