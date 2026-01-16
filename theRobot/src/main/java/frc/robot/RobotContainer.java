@@ -44,6 +44,9 @@ public class RobotContainer {
     // init the leds
     this.initializeLEDSubsystem();
 
+    // init the shooter
+    this.initializeShooter();
+
     // init the various subsystems
     this.initializeDrivetrainSubsystem();
 
@@ -166,6 +169,21 @@ public class RobotContainer {
       System.out.println("SUCCESS: initializeLEDS");
     } else {
       System.out.println("FAIL: initializeLEDS");
+    }
+  }
+
+  /**
+   * A method to init the shooter and azimuth
+   */
+  private void initializeShooter() {
+    if (InstalledHardware.shooterInstalled) {
+      subsystems.setShooterSubsystem(
+          new ShooterSubsystem(Constants.LeadShooterMotorCanID, Constants.FollowShooterMotorCanID));
+      System.out.println("SUCCESS: initializeShooter");
+    }
+    if (InstalledHardware.azimuthInstalled) {
+      subsystems.setAzimuthSubsystem(new AzimuthSubsystem(Constants.AzimuthMotorCanID));
+      System.out.println("SUCCESS: initializeAzimuth");
     }
   }
 
